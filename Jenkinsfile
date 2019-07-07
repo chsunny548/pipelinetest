@@ -1,6 +1,8 @@
 pipeline {
   agent any
-  
+  environment {
+	PASS = credentials('PASS')
+	}
   stages {
 
        stage('Build'){
