@@ -6,3 +6,5 @@ export PASS=$(sed -n '3p' /tmp/.auth)
 docker login -u chsunny548 -p $PASS
 
 cd ~/maven && docker-compose up -d
+
+docker logs maven-app
